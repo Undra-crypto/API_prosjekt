@@ -56,7 +56,7 @@ def main():
         print("Fant ikke API-nøkkelen. Sjekk keyring eller .env.")
         return
 
-    byer: list[str] = ["Kongsberg", "Oslo", "Bergen"]
+    byer: list[str] = ["Hønefoss", "Oslo", "Trondheim"]
     for by in byer:
         koord = hent_koordinater(by, nokkel)
         if koord is None:
